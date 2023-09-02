@@ -1,0 +1,13 @@
+<h1>
+  Olá {{ user.name }} {{ user.surname }}, seja bem-vindo!
+</h1>
+{{#if approved}}
+<p>Parebens seu cadasdro foi aprovado</p>
+{{else}}
+<p>O seu cadastro foi negado</p>
+{{/if}}
+{{#if auth}}
+<p>
+  Você está autenticado no sistema, <a href="/dashboard">clique aqui</a> para acessar a área de membros
+</p>
+{{/if}}
