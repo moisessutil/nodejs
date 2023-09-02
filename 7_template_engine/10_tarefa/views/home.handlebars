@@ -1,0 +1,10 @@
+<h1>
+  Olá {{ user.name }} {{ user.surname }}, seja bem-vindo!
+</h1>
+{{#each items}}
+  <div>
+    <h3>{{this.marca}}</h3>
+    <p>{{this.produto}}</p>
+    <a href="/">Ver mais</a>
+  </div>
+{{/each}}
